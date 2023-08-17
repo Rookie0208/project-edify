@@ -1,0 +1,76 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root {
+    --ffamily : 'poppins', sans-serif;
+    --bgColor : white;
+    --fontcolor : black;
+}
+.nav-bg {
+    /* background-color: black; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 16vh;
+    width: 100%;
+    transition: 0.5s all;
+}
+
+.nav-bg:hover{
+    background-color: black;
+    color: white;
+}
+.nav-bg:hover > .nav-upper {
+    border-bottom: 1.5px solid white;
+}
+.nav-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 8vh;
+    border-bottom: 1.5px solid black;
+    margin: 0 30px;
+
+}
+/* .nav-bg:hover>.nav-upper:hover  {
+    border-bottom: 1.5px solid white;
+} */
+.logo {
+    margin-left: 10%;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.user-profile {
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+}
+
+.login, .signup {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.nav-links {
+    /* margin: 20px; */
+
+}
+
+.nav-links-box {
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0px;
+    padding-bottom: 1rem;
+}
+.nav-links-box .nav-link {
+    margin-right: 2.5rem;
+    cursor: pointer;
+}

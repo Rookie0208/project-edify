@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --ffamily : 'poppins', sans-serif;
+    --bgColor : white;
+    --fontcolor : black;
+}
+body {
+    position: relative;
+}
+.home-page {
+    width: 90vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.home-outer-container {
+    z-index: -10;
+    background-color: var(--bgColor);
+    height: 100vh;
+    width: 100vw;
+}
+.home-inner-container {
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: var(--fontcolor);
+    /* line-height: 3rem; */
+    /* background-color: aqua; */
+    padding: 3.5rem;
+}
+
+.home-head {
+    font-family: var(--ffamily);
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.home-subhead {
+    font-family: var(--ffamily);
+    font-size: 1.1em;
+    margin-bottom: 40px;
+
+}
+
+.home-btn {
+    padding: 0.5rem 7rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid black;
+    transition: 0.5s all;
+}
+
+.home-btn:hover {
+    color: white;
+    background-color: black;
+    /* border: 1px solid white; */
+}
+
+
+
+
+#blob {
+    z-index: 1;
+    height: 300px;
+    /* width: 300px; */
+    aspect-ratio: 1;
+    overflow-x:hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        aquamarine,
+        mediumpurple
+    );
+    animation: moveAndRotate 20s linear infinite;
+    /* animation: rotate 10s ease-in infinite; */
+    /* animation: revolve 10s ease-in infinite; */
+    /* filter: blur(200px); */
+}
+@keyframes moveAndRotate {
+    0% {
+        left: 0;
+        top: 50%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    40% {
+        left: 10%;
+        top: 30%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    50% {
+        left: 25%;
+        top: 45%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    60% {
+        left: 40%;
+        top: 60%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        left: 95%;
+        top: 50%;
+        transform: translateX(-100%) translateY(-50%) rotate(360deg);
+    }
+}
+#blur {
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    backdrop-filter: blur(100px);
+}
+
+
+.page2 {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
