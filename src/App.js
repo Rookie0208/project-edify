@@ -1,5 +1,7 @@
-import {Home, Navbar} from './components/index';
-import {Routes, Route} from 'react-router-dom';
+import { Home, Navbar, Newletter, Footer, Signup, About, Courses, Study, Contact } from './components/index';
+// import {Route, Switch} from 'react-router-dom';
+import {Route, Routes } from "react-router-dom";
+
 import "./index.css";
 
 
@@ -7,7 +9,16 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    <Home/>
+        <Routes>
+          <Route path='/' Component={Home} />
+          <Route path='/about' Component={About} />
+          <Route path='/courses' Component={Courses} />
+          <Route path='/study' Component={Study} />
+          <Route path='/signup' Component={Signup} />
+          <Route path='/contact' Component={Contact} />
+        </Routes>
+        <Newletter/>
+      <Footer/>
     </>
   );
 }

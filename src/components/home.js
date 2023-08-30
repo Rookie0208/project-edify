@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
+
 import './home.css';
 const Home = () => {
 
@@ -33,7 +35,7 @@ const Home = () => {
                 searching for it
               </p>
             </div>
-            <button className='home-btn'>Sign up</button>
+            <button className='home-btn'> <Link to='/Signup'> Sign up </Link> </button>
           </div>
         </div>
       </section>

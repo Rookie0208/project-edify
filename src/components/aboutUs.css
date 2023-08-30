@@ -1,0 +1,14 @@
+
+*{
+    box-sizing: border-box;
+}
+.about-us-section {
+    /* margin-top: 5px; */
+    height: 100vh;
+    margin-left: 5%;
+}
+
+.about-us-container {
+    position: relative;
+    /* top: 16vh; */
+}
