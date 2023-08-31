@@ -1,4 +1,4 @@
-import { Home, Navbar, Newletter, Footer, Signup, About, Courses, Study, Contact } from './components/index';
+import { Home, Navbar, Newletter, Footer, Signup, Login, About, Courses, Study, Contact } from './components/index';
 // import {Route, Switch} from 'react-router-dom';
 import {Route, Routes } from "react-router-dom";
 
@@ -15,6 +15,7 @@ const App = () => {
           <Route path='/courses' Component={Courses} />
           <Route path='/study' Component={Study} />
           <Route path='/signup' Component={Signup} />
+          <Route path='/login' Component={Login}/>
           <Route path='/contact' Component={Contact} />
         </Routes>
         <Newletter/>

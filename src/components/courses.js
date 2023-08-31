@@ -9,7 +9,7 @@ const Courses = () => {
       <section className="courses-section">
         <div className="courses-container">
           <div className="course-header">
-            <h1>Explore Courses</h1>
+            <h1>Explore Our Courses</h1>
           </div>
           <div className="course-navigation">
             <ul className='course-nav-links'>

@@ -4,11 +4,103 @@
 }
 .about-us-section {
     /* margin-top: 5px; */
-    height: 100vh;
+    height: auto;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .about-us-container {
     position: relative;
     /* top: 16vh; */
+}
+
+.about-us-header h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 8%;
+
+}
+.about-us-text-left h3{
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us-upper {
+    height: 50vh;
+}
+
+.about-us-mid {
+    margin-top: 40px;
+
+}
+.about-us-mid-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.about-us-mid-content .image {
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 12px;
+}
+.goal-content .goal-header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.goal-content {
+    width: 100%;
+    margin: 0 20px;
+}
+.goal-content h5 {
+    opacity: 0.8;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
+}
+
+.about-us-team {
+    margin-top: 40px;
+}
+
+.team-info {
+    /* display: flex; */
+    /* height: 50vh; */
+    /* margin-bottom: 20px; */
+}
+
+.team-images .team-img {
+    position: sticky;
+    top: 16vh;
+    width: 40vw;
+    height: 50vh;
+    /* background-color: blueviolet; */
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.member-info {
+    position: relative;
+    /* top: 16vh; */
+    width: 40vw;
+    height: 50vh;
+    /* background-color: blueviolet; */
+    border-radius: 12px;
+    margin-left: 20px;
+}
+
+.team-member .name {
+    font-size: 2rem;
+}
+
+.team-member .about-member {
+    opacity: 0.8;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }

@@ -7,6 +7,7 @@ import About from './aboutUs';
 import Contact from './contactUs';
 import Courses from './courses';
 import Study from './StudyZone';
+import Login from './login';
 
 // export {Home, Navbar, Newletter, Footer};
-export {Home,Navbar, Signup, Footer, Newletter,About,Contact,Courses, Study};
+export {Home,Navbar, Signup, Login, Footer, Newletter,About,Contact,Courses, Study};

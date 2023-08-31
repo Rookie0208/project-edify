@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 // import Modal from '@material-ui/core/Modal';
 import './signup.css'
 
@@ -92,7 +93,7 @@ const Signup = () => {
                                         <i class="zmdi zmdi-linkedin material-icons-name"></i>linkedin</div>
                                 </div>
                                 <div className="footer-link">
-                                    <h5 className='form-subtitle'>Already a member? <a href="#" className='login'><span onClick={handleOpen}>Login</span></a> </h5>
+                                    <h5 className='form-subtitle'>Already a member? <Link to='/Login'>Login</Link> </h5>
 
                                 </div>
                             </div>

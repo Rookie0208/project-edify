@@ -9,7 +9,7 @@ import './navbar.css';
             <div className="logo"><Link to='/'> Edify </Link></div>
             {/* <div className="user-profile "> */}
                 <ul className="nav-user-links">
-                    <li className="login">Login</li>
+                    <li className="login"><Link to='/Login'> Login </Link></li>
                     <li className="signup"> <Link to='/Signup'> Signup </Link></li>
                 </ul>
             {/* </div> */}

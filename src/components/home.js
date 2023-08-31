@@ -1,4 +1,6 @@
 import React from 'react'
+import Courses from './courses'
+import StudyZone from './StudyZone';
 import {Link} from 'react-router-dom';
 
 import './home.css';
@@ -40,8 +42,16 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="page2">
-
+      <section className="page2 mb-10">
+        <Courses/>
+        {/* Recommended Courses and all courses */}
+        {/* add have queries section in place of newletter */}
+      </section>
+      <section className="page3">
+        <StudyZone/>
+      </section>
+      <section className="page4">
+        
       </section>
     </>
   )
