@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './courses.css';
 import CourseCard from './courseCard';
+import CoursesNav from './CoursesNav';
+import Course from './api/CourseApi';
+import List from './api/CourseNavList';
 
+const uniqueNav = [
+  ...new Set(Course.map((currEle) => {
+  return currEle.category;
+})
+)];
+console.log(uniqueNav);
 
 const Courses = () => {
+  const [courseData, setCourseData] = useState(Course);
+  const [navList, setNavList] = useState(List);
+  // console.log(courseData);
+
+
+  const filterItem = (category) => {
+    const updatedList = Course.filter((currEle) => {
+      return currEle.category === category;
+    });
+    setCourseData(updatedList);
+  }
+
+  const filterList = (category) => {
+    const updatedList = List.filter((currEle) => {
+      return currEle.category === category;
+    });
+    setNavList(updatedList);
+  }
+
   return (
     <>
       <section className="courses-section">
@@ -13,22 +41,17 @@ const Courses = () => {
           </div>
           <div className="course-navigation">
             <ul className='course-nav-links'>
-              <li className='course-nav-link' id='c1'>K-3</li>
-              <li className='course-nav-link' id='c2'>4-8</li>
-              <li className='course-nav-link active' id='c3'>9-12</li>
-              <li className='course-nav-link' id='c4'>University</li>
+              <li className='course-nav-link' id='c1' onClick={() => filterList("k3")}>1-3</li>
+              <li className='course-nav-link' id='c2' onClick={() => filterList("4")}>4-8</li>
+              <li className='course-nav-link' id='c3' onClick={() => filterList("9")}>9-12</li>
+              <li className='course-nav-link' id='c4' onClick={() => filterList("uni")}>University</li>
             </ul>
 
             {/* This part will be rendered according to the button clicked in above links */}
-            <ul className="course-nav-links2">
-              <li className="course-nav-link" id='c9'>Class 9th</li>
-              <li className="course-nav-link" id='c10'>Class 10th</li>
-              <li className="course-nav-link" id='c11'>Class 11th</li>
-              <li className="course-nav-link active" id='c11'>Class 12th</li>
-            </ul>
+            <CoursesNav filterItem={filterItem} navList={navList} courseData={courseData}/>
           </div>
 
-          <CourseCard/>
+          <CourseCard courseData={courseData} />
           
         </div>
 

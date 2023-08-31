@@ -30,7 +30,11 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
     padding: 0.4em 0;
+}
+.course-nav-links2::-webkit-scrollbar {
+    display: none;
 }
 .course-nav-links2 .course-nav-link {
     padding: 0.7em 2em;
@@ -64,14 +68,14 @@
     color: white;
 }
 
-.courses-subject {
+/* .courses-subject {
     margin-top: 20px;
-    /* width: 100%; */
+    width: 100%;
     height: 50vh;
     display: flex;
     overflow-x: auto;
-}
-.courses-section::-webkit-scrollbar {
+} */
+.courses-subject::-webkit-scrollbar {
     display: none;
 }
 .courses-subject .subjects {
