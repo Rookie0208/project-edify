@@ -35,7 +35,7 @@ const Login = () => {
 
                     <div className="form-group">
                         <label htmlFor="cPass">
-                            My Password is
+                            This is my Password
                         </label>
                         <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder=' ' />
                     </div>

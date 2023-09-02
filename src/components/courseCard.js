@@ -8,10 +8,9 @@ const CourseCard = ({ courseData }) => {
 
     return (
         <>
-                <div className="courses-subject flex overflow-x-auto h-[50vh] mt-[20px]">
+                <div className="courses-subject flex overflow-x-auto h-[25vh] mt-[20px] mb-[20px]">
             {courseData.map((currEle) => {
-            const { id, image, name, category, description } = currEle;
-
+            const { id, tag, image, name, category, description } = currEle;
                 return (
                     <>
                             <div className="subjects" key={id}>

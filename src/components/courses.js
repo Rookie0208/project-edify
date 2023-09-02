@@ -4,6 +4,7 @@ import CourseCard from './courseCard';
 import CoursesNav from './CoursesNav';
 import Course from './api/CourseApi';
 import List from './api/CourseNavList';
+// import ApiData from './extra/api_data'
 
 const uniqueNav = [
   ...new Set(Course.map((currEle) => {
@@ -14,7 +15,8 @@ console.log(uniqueNav);
 
 const Courses = () => {
   const [courseData, setCourseData] = useState(Course);
-  const [navList, setNavList] = useState(List);
+  // const [recList, setRecList] = useState(Course);
+  const [navList, setNavList] = useState([]);
   // console.log(courseData);
 
 
@@ -22,6 +24,13 @@ const Courses = () => {
     const updatedList = Course.filter((currEle) => {
       return currEle.category === category;
     });
+    setCourseData(updatedList);
+  }
+  const filterItem2 = (category) => {
+    const updatedList = Course.filter((currEle) => {
+      return currEle.category === category;
+    })
+    // console.log(updatedList);
     setCourseData(updatedList);
   }
 
@@ -53,6 +62,14 @@ const Courses = () => {
 
           <CourseCard courseData={courseData} />
           
+        </div>
+
+        <div className="recommended-courses mt-[50px]">
+          <div className="recomended-header">
+            <h2>Recomended Courses</h2>
+          </div>
+              <CourseCard onLoad={() => filterItem2("recommended")} courseData={courseData} />
+
         </div>
 
       </section>

@@ -8,6 +8,13 @@ import Contact from './contactUs';
 import Courses from './courses';
 import Study from './StudyZone';
 import Login from './login';
+import Profile from './profile';
+import Leaderboard from './Leaderboard';
+import Editprofile from './Editprofile';
+import Accountsettings from './Accountsettings';
+import Mainprofile from '../MainProfile';
+import Profilenavbar from './ProfileNavbar';
+import UserProfile from './UserProfile';
 
 // export {Home, Navbar, Newletter, Footer};
-export {Home,Navbar, Signup, Login, Footer, Newletter,About,Contact,Courses, Study};
+export {Home, Navbar, Signup, Login, Footer, Newletter, About, Contact,Courses, Study, Profile, Leaderboard, Editprofile, Accountsettings, Mainprofile, Profilenavbar, UserProfile};

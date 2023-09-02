@@ -11,6 +11,7 @@ import './navbar.css';
                 <ul className="nav-user-links">
                     <li className="login"><Link to='/Login'> Login </Link></li>
                     <li className="signup"> <Link to='/Signup'> Signup </Link></li>
+                    <li className="profile"> <Link to='/Profile'> Profile </Link></li>
                 </ul>
             {/* </div> */}
         </div>

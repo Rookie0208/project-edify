@@ -1,35 +1,22 @@
 import React from 'react'
 
-const StudyCard = () => {
+const StudyCard = ({ studyData }) => {
     return (
         <>
             <div className="material-container">
-                <div className="materials">
-                    <div className="about-material">
-                        <h3>NCERT Solution</h3>
-                    </div>
-                </div>
-                <div className="materials">
-                    <div className="about-material">
-                        <h3>Sample Question Papers</h3>
-                    </div>
-                </div>
-                <div className="materials">
-                    <div className="about-material">
-                        <h3>Previous Year Questions</h3>
-                    </div>
-                </div>
-                <div className="materials">
-                    <div className="about-material">
-                        <h3>Revision Notes</h3>
-                    </div>
-                </div>
-                <div className="materials">
-                    <div className="about-material">
-                        <h3>Quizes</h3>
-                    </div>
-                </div>
-                
+                {
+                    studyData.map((currEle) => {
+                        return (
+                            <>
+                                <div className="materials">
+                                    <div className="about-material">
+                                        <h3>{currEle.sName}</h3>
+                                    </div>
+                                </div>
+                            </>
+                        )
+                    })}
+
             </div>
         </>
     )

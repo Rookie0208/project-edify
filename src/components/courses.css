@@ -3,9 +3,10 @@
 }
 .courses-section {
     /* margin-top: 5px; */
-    height: auto;
+    height: 100vh;
     margin-left: 5%;
     margin-right: 5%;
+    /* overflow: auto; */
 }
 .courses-container {
     position: relative;
@@ -75,6 +76,10 @@
     display: flex;
     overflow-x: auto;
 } */
+.courses-subject {
+    /* background-color: aquamarine; */
+    /* height: 25vh; */
+}
 .courses-subject::-webkit-scrollbar {
     display: none;
 }
@@ -88,9 +93,14 @@
     /* justify-content: center; */
     /* align-items: center; */
     margin-right: 8px;
+    /* margin-bottom: 8px; */
+
 }
 .about-subject h3 {
     color: white;
     font-size: 1.2em;
     margin: 1rem 1.5rem;
+}
+.recomended-header h2 {
+    font-size: 2em;
 }

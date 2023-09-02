@@ -10,7 +10,7 @@ const CoursesNav = ({filterItem, navList, courseData}) => {
             return (
                 <>
                 <li className="course-nav-link" id='c9' onClick={() => {
-                    // console.log(currEle.standard.cc)
+                    // console.log(currEle.category.cc)
                     filterItem(currEle.category)}
                 }>{currEle.cName}</li>
                 </>

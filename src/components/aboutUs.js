@@ -1,15 +1,16 @@
 import React from 'react';
 import './aboutUs.css';
+import Sheep from './assets/sheep2.jpg';
 const About = () => {
 
   return (
     <>
       <section className="about-us-section">
         <div className="about-us-container">
-          <div className="about-us-header">
+          <div className="about-us-header mb-[8%]">
             <h2>Who are we 👀❔</h2>
           </div>
-          <div className="about-us-upper">
+          <div className="about-us-upper flex justify-between mb-[8%]">
             <div className="about-us-text-left">
               <h3>Remain a step
                 <i>ahead </i>
@@ -18,6 +19,9 @@ const About = () => {
               <h3>
                 Be different from Others.
               </h3>
+            </div>
+            <div className="image">
+              <img src={Sheep} alt="sheep" className='sheep-img'/>
             </div>
           </div>
 

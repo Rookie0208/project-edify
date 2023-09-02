@@ -17,7 +17,8 @@
     height: 100%;
     border-radius: 20px;
     /* background-color: var(--fcolor) */
-    background-color: rgba(241, 239, 239, 0.571);
+    /* background-color: rgba(241, 239, 239, 0.571); */
+    background-color: #f2f1ec;
 }
 
 .login-content {
