@@ -16,6 +16,8 @@ import Mainprofile from '../MainProfile';
 import Profilenavbar from './ProfileNavbar';
 import UserProfile from './UserProfile';
 import Subjectinfo from './SubjectInfo';
+import Popularcourse from './popularCourses'
+import Contactusmain from './contactUsMain';
 
 // export {Home, Navbar, Newletter, Footer};
-export {Home, Navbar, Signup, Login, Footer, Newletter, About, Contact,Courses, Study, Profile, Leaderboard, Editprofile, Accountsettings, Mainprofile, Profilenavbar, UserProfile, Subjectinfo};
+export {Home, Navbar, Signup, Login, Footer, Newletter, About, Contact,Courses, Study, Profile, Leaderboard, Editprofile, Accountsettings, Mainprofile, Profilenavbar, UserProfile, Subjectinfo, Popularcourse, Contactusmain};

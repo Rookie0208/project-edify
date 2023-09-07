@@ -1,4 +1,4 @@
-import { Home, Navbar, Newletter, Footer, Signup, Login, About, Courses, Study, Contact, Profile, Editprofile, Accountsettings, Leaderboard, Mainprofile, UserProfile,Subjectinfo } from './components/index';
+import { Home, Navbar, Newletter, Footer, Signup, Login, About, Courses, Study, Contact, Profile, Editprofile, Accountsettings, Leaderboard, Mainprofile, UserProfile, Subjectinfo, Popularcourse, Contactusmain } from './components/index';
 // import {Route, Switch} from 'react-router-dom';
 import {Route, Routes } from "react-router-dom";
 import {gsap, Power3} from 'gsap';
@@ -25,6 +25,8 @@ const App = () => {
           <Route path='/account' Component={Accountsettings} />
           <Route path='/user' Component={UserProfile} />
           <Route path='/subjectinfo' Component={Subjectinfo} />
+          <Route path='/popularcourses' Component={Popularcourse} />
+          <Route path='/contactus' Component={Contactusmain} />
         </Routes>
         <Newletter/>
       <Footer/>

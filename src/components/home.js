@@ -5,6 +5,7 @@ import StudyZone from './StudyZone';
 import { Link } from 'react-router-dom';
 
 import './home.css';
+import Popularcourse from './popularCourses';
 const Home = () => {
   let tl = new gsap.timeline();
   let ease = Power4.easeOut();
@@ -89,9 +90,10 @@ const Home = () => {
         <Courses />
         {/* Recommended Courses and all courses */}
         {/* add have queries section in place of newletter */}
+        <Popularcourse/>
       </section>
       <section className="page3">
-        <StudyZone />
+        {/* <StudyZone /> */}
       </section>
       <section className="page4">
 

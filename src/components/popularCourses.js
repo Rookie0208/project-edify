@@ -3,25 +3,14 @@ import StudyCard from './studyCard';
 import Material from './api/StudyMaterialApi';
 import './studyMaterial.css';
 
-const Study = () => {
+const Popularcourse = () => {
     const [studyData, setStudyData] = useState(Material);
     return (
         <>
             <section className="study-section w-[90vw]">
                 <div className="study-container">
                     <div className="study-header">
-                        <h1>Study Material</h1>
-                    </div>
-                    <div className="study-materials">
-                    <StudyCard studyData={studyData} />
-                    {/* <StudyCard /> */}
-                    </div>
-                        
-                </div>
-
-                <div className="study-container">
-                    <div className="study-header">
-                        <h1>Courses in Demand</h1>
+                        <h1>Popular Courses</h1>
                     </div>
                     <div className="study-materials">
                     <StudyCard studyData={studyData} />
@@ -33,4 +22,4 @@ const Study = () => {
         </>
     )
 }
-export default Study;
+export default Popularcourse;
