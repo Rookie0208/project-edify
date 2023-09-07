@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+## import the following components
+
+### `npm i gsap`
+The gsap library helps in smooth animation of the hero page.
+
 In the project directory, you can run:
 
 ### `npm start`
