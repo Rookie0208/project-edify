@@ -1,6 +1,6 @@
 
 .profile-section {
-    height: 100vh;
+    height: 110vh;
     position: relative;
 }
 .profile-container {
@@ -59,8 +59,12 @@
 .user-info {
     /* text-align: center; */
 }
+.user-social-links {
+}
 .user-social-links a{
-    margin-right: 1.5rem;
+    width: 30%;
+    /* background-color: aquamarine; */
+    margin-bottom: 0.2rem;
     font-size: 1.1em;
 }
 

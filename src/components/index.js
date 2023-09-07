@@ -15,6 +15,7 @@ import Accountsettings from './Accountsettings';
 import Mainprofile from '../MainProfile';
 import Profilenavbar from './ProfileNavbar';
 import UserProfile from './UserProfile';
+import Subjectinfo from './SubjectInfo';
 
 // export {Home, Navbar, Newletter, Footer};
-export {Home, Navbar, Signup, Login, Footer, Newletter, About, Contact,Courses, Study, Profile, Leaderboard, Editprofile, Accountsettings, Mainprofile, Profilenavbar, UserProfile};
+export {Home, Navbar, Signup, Login, Footer, Newletter, About, Contact,Courses, Study, Profile, Leaderboard, Editprofile, Accountsettings, Mainprofile, Profilenavbar, UserProfile, Subjectinfo};

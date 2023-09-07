@@ -23,14 +23,25 @@ const UserProfile = ({ arr }) => {
                                         {arr[3]}
                                     </h4>
                                 </div>
+                                <div className="user-bio mb-1">
+                                    <h4>
+                                        {arr[7]}
+                                    </h4>
+                                </div>
+                                <div className="user-bio mb-3">
+                                    <h4>
+                                        {arr[8]}
+                                    </h4>
+                                </div>
                             </div>
-                            <div className="user-social-links">
-                                <a href="https://www.instagram.com/amitrawat0208/" target='_blank'> <i class="zmdi zmdi-instagram material-icons-name">
+                            
+                            <div className="user-social-links flex flex-col">
+                                <a href={arr[4]} target='_blank'> <i class="zmdi zmdi-instagram material-icons-name">
                                 </i> Instagram</a>
 
-                                <a href="https://twitter.com/AmitRawt1" target='_blank'><i class="zmdi zmdi-twitter material-icons-name"></i> Twitter</a>
+                                <a href={arr[5]} target='_blank'><i class="zmdi zmdi-twitter material-icons-name"></i> Twitter</a>
 
-                                <a href="https://www.linkedin.com/in/amit-rawat-477130203/" target='_blank'><i class="zmdi zmdi-linkedin material-icons-name"></i> Linkedin</a>
+                                <a href={arr[6]} target='_blank'><i class="zmdi zmdi-linkedin material-icons-name"></i> Linkedin</a>
                             </div>
                         </div>
                     </div>

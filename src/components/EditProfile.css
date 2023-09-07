@@ -1,8 +1,9 @@
+
 .edit-profile-main-section {
+    /* background-color: pink; */
     margin-left: 20px;
     width: 80vw;
     /* border-right: 1px solid gray; */
-    /* background-color: pink; */
 }
 
 .fields {
@@ -19,7 +20,7 @@
     padding-left: 0.5rem;
     opacity: 0.7;
 }
-.personal-fields .fields {
+.personal-fields .fields, .school-form .fields, .college-form .fields {
     margin-bottom: 4px;
 }
 .social-field {
@@ -29,7 +30,7 @@
 .designation .des {
     height: 6rem;
     width: 6rem;
-    background-color: blueviolet;
+    background-color: #f2f1ec;
     margin: 1rem 1rem;
     display: flex;
     justify-content: center;
@@ -56,4 +57,22 @@
 .submit-buttons button:hover {
     background-color: black;
     color: #f2f1ec;
+}
+.btn-class-field {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+.school-form button {
+    border: 1px solid gray;
+    margin-bottom: 4px;
+    margin-right: 4%;
+    border-radius: 8px;
+    font-size: 0.9em;
+    padding: 0.1em 0.6em;
+}
+
+.school-form button:hover {
+    background-color: black;
+    color: white;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './footer.css';
 
 const Footer = () => {
@@ -27,8 +28,8 @@ const Footer = () => {
                         <div className="footer-company flex flex-col mx-5">
                             <h4>Company</h4>
 
-                            <a href="">About us</a>
-                            <a href="">Contact us</a>
+                            <a href=""><Link to="/About">About us </Link></a>
+                            <a href=""><Link to="/About">Contact us </Link></a>
                         </div>
                         <div className="footer-courses flex flex-col mx-5">
                             <h4>Courses</h4>

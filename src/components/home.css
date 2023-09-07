@@ -24,6 +24,8 @@
     width: 100vw;
 }
 .home-inner-container {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: 0;
     z-index: 2;
     position: absolute;
     top: 55%;
@@ -37,29 +39,33 @@
     padding: 3.5rem;
 }
 
-.home-head {
+.home_head {
+    /* clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     font-family: var(--ffamily);
     font-size: 4em;
     margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(-100px);
 }
 
-.home-subhead {
+.home_subhead {
     font-family: var(--ffamily);
     font-size: 1.1em;
     margin-bottom: 40px;
 
 }
-
-.home-btn {
+.home_btn {
     padding: 0.5rem 7rem;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     border: 1px solid black;
     transition: 0.5s all;
+    opacity: 1;
 }
 
-.home-btn:hover {
+.home_btn:hover {
     color: white;
     background-color: black;
     /* border: 1px solid white; */
