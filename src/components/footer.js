@@ -29,7 +29,7 @@ const Footer = () => {
                             <h4>Company</h4>
 
                             <a href=""><Link to="/About">About us </Link></a>
-                            <a href=""><Link to="/About">Contact us </Link></a>
+                            <a href=""><Link to="/Contact">Contact us </Link></a>
                         </div>
                         <div className="footer-courses flex flex-col mx-5">
                             <h4>Courses</h4>

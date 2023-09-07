@@ -64,7 +64,7 @@
     grid-template-columns: 1fr auto auto;
 }
 .school-form button {
-    border: 1px solid gray;
+    border: 1px solid rgba(149, 149, 149, 0.522);
     margin-bottom: 4px;
     margin-right: 4%;
     border-radius: 8px;
