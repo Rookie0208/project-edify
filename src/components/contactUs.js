@@ -1,5 +1,6 @@
 import React from 'react'
 import './contactUs.css';
+import ContactImg from './assets/contact2.svg'
 
 const Contact = () => {
   return (
@@ -66,13 +67,18 @@ const Contact = () => {
               <h3>Or fill in the contact form below and one of our lovely team will get back to you!</h3>
             </div>
           </div>
-          <div className="contact-form flex flex-col">
-            <input type="text" placeholder='Name' className='border-2'/>
-            <input type="text" placeholder='Email' className='border-2'/>
-            <input type="text" placeholder='Phone number' className='input-field border-2'/>
-            <textarea name="query" className='input-field border-2' cols="50" rows="3" placeholder='What would you like to ask about'></textarea>
-            <div className="submit-btn">
-              <button>submit</button>
+          <div className="contact-form-main flex justify-around">
+            <div className="contact-form flex flex-col">
+              <input type="text" placeholder='Name' className='border-2' />
+              <input type="text" placeholder='Email' className='border-2' />
+              <input type="text" placeholder='Phone number' className='input-field border-2' />
+              <textarea name="query" className='input-field border-2' cols="50" rows="3" placeholder='What would you like to ask about'></textarea>
+              <div className="submit-btn">
+                <button>submit</button>
+              </div>
+            </div>
+            <div className="contactUs-img">
+              <img src={ContactImg} alt="" />
             </div>
           </div>
         </div>

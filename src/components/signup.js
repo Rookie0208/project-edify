@@ -1,4 +1,5 @@
 import React from 'react'
+import SignupImg from './assets/signup.jpg'
 import { useState } from 'react';
 import {Link} from 'react-router-dom';
 // import Modal from '@material-ui/core/Modal';
@@ -21,7 +22,8 @@ const Signup = () => {
 
                         <div className="signup-img">
                             <div className='img-container'>
-                                <img src="https://picsum.photos/460/800?grayscale" alt="image" />
+                                {/* <img src="https://picsum.photos/460/800?grayscale" alt="image" /> */}
+                                <img src={SignupImg} alt="signup-img" />
                             </div>
                             {/* <div className="img-text">
                                 <p>

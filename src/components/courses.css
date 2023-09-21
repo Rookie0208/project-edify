@@ -96,6 +96,14 @@
     /* margin-bottom: 8px; */
 
 }
+.openBtn {
+    position: relative;
+     top: 35%;
+     left: 70%;
+     border: none;
+     border-radius: 12px;
+    background-color: pink;
+}
 .about-subject h3 {
     color: white;
     font-size: 1.2em;

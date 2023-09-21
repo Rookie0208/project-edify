@@ -44,8 +44,8 @@
 }
 
 .about-us-mid-content .image {
-    width: 100%;
-    background-color: blueviolet;
+    width: 50%;
+    /* background-color: blueviolet; */
     border-radius: 12px;
 }
 .goal-content .goal-header {

@@ -20,7 +20,7 @@ const CourseCard = ({ courseData }) => {
                                 <div className="about-desc">
                                     {/* <h4>{description}</h4> */}
                                 </div>
-                                <button className='openBtn p-2 bg-pink-300'>
+                                <button className='openBtn p-3'>
                                     <Link to='/Subjectinfo'>Click</Link>
                                 </button>
                             </div>

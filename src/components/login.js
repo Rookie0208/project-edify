@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import LoginImg from './assets/login.svg'
 import './login.css';
 
 const Login = () => {
@@ -11,7 +12,8 @@ const Login = () => {
 
                 <div className="login-img">
                             <div className='img-container'>
-                                <img src="https://picsum.photos/460/800?grayscale" alt="image" />
+                                {/* <img src="https://picsum.photos/460/800?grayscale" alt="image" /> */}
+                                <img src={LoginImg} alt="login-img" />
                             </div>
                             {/* <div className="img-text">
                                 <p>
