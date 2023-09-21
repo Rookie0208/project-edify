@@ -14,7 +14,7 @@
     right: 5px;
     top: 16vh;
     width: calc(100% - 10px);
-    height: 100%;
+    height: 113%;
     border-radius: 20px;
     /* background-color: var(--fcolor) */
     /* background-color: rgba(241, 239, 239, 0.571); */
@@ -39,8 +39,6 @@
     width: 100%;
     height: 100vh;
     object-fit: cover;
-    
-
 }
 
 .login-form h2 {

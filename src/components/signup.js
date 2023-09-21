@@ -1,19 +1,29 @@
 import React from 'react'
 import SignupImg from './assets/signup.jpg'
 import { useState } from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import Modal from '@material-ui/core/Modal';
 import './signup.css'
 
 const Signup = () => {
     const [open, setOpen] = useState(false);
+    const [school, setSchool] = useState(false);
+    const [std, setStd] = useState(false);
     const handleClose = () => {
         setOpen(false);
     };
     const handleOpen = () => {
         setOpen(true);
     };
-
+    const showSchool = () => {
+        setSchool(true);
+    }
+    const showCollege = () => {
+        setSchool(false);
+    }
+    const showStd = () => {
+        setStd(true);
+    }
     return (
         <>
             <section className='signup'>
@@ -48,7 +58,49 @@ const Signup = () => {
                                     <label htmlFor="college">
                                         I Study in
                                     </label>
-                                    <input type="text" name='college' autoComplete='off' id='college' placeholder=' ' />
+                                    {/* <input type="text" name='college' autoComplete='off' id='college' placeholder=' ' /> */}
+                                    <div className="designation">
+                                        <div className="desig" onClick={showSchool}>School</div>
+                                        <div className="desig" onClick={showCollege}>College</div>
+                                    </div>
+                                    {
+                                        school ? (
+                                            <div className="school-form">
+                                                <div className="fields">
+                                                    <label htmlFor="standard">Class</label>
+                                                    {/* <input type="text" className='input-field border-2' /> */}
+                                                    <select name="standards" id="standards" className='input-field border-2'>
+                                                        <option value="select">select</option>
+                                                        <option value="btech">6th</option>
+                                                        <option value="bsc">7th</option>
+                                                        <option value="bcom">8th</option>
+                                                        <option value="mba">9th</option>
+                                                        <option value="mba">10th</option>
+                                                        <option value="mba">11th PCM</option>
+                                                        <option value="mba">11th PCB</option>
+                                                        <option value="mba">11th Commerce</option>
+                                                        <option value="mba">12th PCM</option>
+                                                        <option value="mba">12th PCB</option>
+                                                        <option value="mba">12th Commerce</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                        ) : (
+                                            <div className="college-form">
+                                                <div className="fields">
+                                                    <label htmlFor="qualification">Qualification</label>
+                                                    <select name="branches" id="branches" className='input-field border-2'>
+                                                        <option value="select">select</option>
+                                                        <option value="btech">B.tech</option>
+                                                        <option value="bsc">B.Sc</option>
+                                                        <option value="bcom">B.Com</option>
+                                                        <option value="mba">MBA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        )
+                                    }
                                 </div>
 
                                 <div className="form-group">
@@ -104,61 +156,61 @@ const Signup = () => {
                         {/* <Modal onClose={handleClose}
                         open = {open}
                         > */}
-                            <div className="signup-form active">
-                                <div className="form-header">
-                                    <h2 className="form-title">Sign In</h2>
+                        <div className="signup-form active">
+                            <div className="form-header">
+                                <h2 className="form-title">Sign In</h2>
+                            </div>
+                            <form action="" className="register-form" id='register-form'>
+                                <div className="form-group ">
+                                    <label htmlFor="name">
+                                        My Name is
+                                    </label>
+                                    <input type="text" name='name' autoComplete='off' id='name' placeholder=' ' />
                                 </div>
-                                <form action="" className="register-form" id='register-form'>
-                                    <div className="form-group ">
-                                        <label htmlFor="name">
-                                            My Name is
-                                        </label>
-                                        <input type="text" name='name' autoComplete='off' id='name' placeholder=' ' />
-                                    </div>
 
-                                    <div className="form-group">
-                                        <label htmlFor="college">
-                                            I Study in
-                                        </label>
-                                        <input type="text" name='college' autoComplete='off' id='college' placeholder=' ' />
-                                    </div>
-
-                                    <div className="form-group">
-                                        <label htmlFor="">
-                                            This is my E-mail
-                                        </label>
-                                        <input type="email" name='email' autoComplete='off' id='email' placeholder=' ' />
-                                    </div>
-
-
-
-                                    <div className="form-group">
-                                        <label htmlFor="password">
-                                            Set My Password to
-                                        </label>
-                                        <input type="password" name='name' autoComplete='off' id='password' placeholder='' />
-                                    </div>
-
-                                    <div className="form-group">
-                                        <label htmlFor="cPass">
-                                            My Password is
-                                        </label>
-                                        <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder=' ' />
-                                    </div>
-
-                                    <div className="form-btn">
-                                        <input type="submit" name='signup' id='signup' value='Register' className='form-submit' />
-                                    </div>
-                                </form>
-
-                                <div className="lower-text">
-                                    <h5>or register with</h5>
+                                <div className="form-group">
+                                    <label htmlFor="college">
+                                        I Study in
+                                    </label>
+                                    <input type="text" name='college' autoComplete='off' id='college' placeholder=' ' />
                                 </div>
-                                <div className="other-btn">
-                                    {/* <a href=""><i class="zmdi zmdi-google material-icons-name"></i></a>
+
+                                <div className="form-group">
+                                    <label htmlFor="">
+                                        This is my E-mail
+                                    </label>
+                                    <input type="email" name='email' autoComplete='off' id='email' placeholder=' ' />
+                                </div>
+
+
+
+                                <div className="form-group">
+                                    <label htmlFor="password">
+                                        Set My Password to
+                                    </label>
+                                    <input type="password" name='name' autoComplete='off' id='password' placeholder='' />
+                                </div>
+
+                                <div className="form-group">
+                                    <label htmlFor="cPass">
+                                        My Password is
+                                    </label>
+                                    <input type="password" name='cPass' autoComplete='off' id='cPass' placeholder=' ' />
+                                </div>
+
+                                <div className="form-btn">
+                                    <input type="submit" name='signup' id='signup' value='Register' className='form-submit' />
+                                </div>
+                            </form>
+
+                            <div className="lower-text">
+                                <h5>or register with</h5>
+                            </div>
+                            <div className="other-btn">
+                                {/* <a href=""><i class="zmdi zmdi-google material-icons-name"></i></a>
                                 <a href=""></a>
                                 <a href=""></a> */}
-                                    {/* <div className="social">
+                                {/* <div className="social">
                                     <div className="google">
                                         <i class="zmdi zmdi-google material-icons-name"></i>google</div>
                                     <div className="facebook">
@@ -166,12 +218,12 @@ const Signup = () => {
                                     <div className="linkedin">
                                         <i class="zmdi zmdi-linkedin material-icons-name"></i>linkedin</div>
                                 </div> */}
-                                    <div className="footer-link">
-                                        <h5 className='form-subtitle'>Create new account <a href="#">signup</a> </h5>
+                                <div className="footer-link">
+                                    <h5 className='form-subtitle'>Create new account <a href="#">signup</a> </h5>
 
-                                    </div>
                                 </div>
                             </div>
+                        </div>
                         {/* </Modal> */}
                     </div>
                 </div>

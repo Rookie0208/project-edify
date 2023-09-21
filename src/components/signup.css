@@ -5,31 +5,30 @@
     --fcolor: rgb(236, 255, 255);
 }
 .signup {
-    height: 100vh;
+    height: 110vh;
     margin-bottom: 40px;
 
 }
 .container {
-    position: absolute;
-    right: 5px;
-    top: 20vh;
-    width: calc(100% - 10px);
-    height: 100%;
-    border-radius: 20px;
+    /* position: absolute; */
+    /* right: 5px; */
+    /* top: 20vh; */
+    /* width: calc(100% - 10px); */
+    /* height: 100vh; */
+    /* border-radius: 20px; */
     /* background-color: var(--fcolor) */
-    background-color: rgba(241, 239, 239, 0.571);
+    /* background-color: rgba(241, 239, 239, 0.571); */
 }
 .signup-img {
     height: 100%;
     width: 100%;
 }
 .signup-img img {
+    margin-top: -4%;
     border-radius: 18px;
     width: 100%;
-    height: 100vh;
+    height: 106vh;
     object-fit: cover;
-    
-
 }
 
 .img-container {
@@ -37,7 +36,8 @@
 }
 
 .singup-content {
-    height: 100%;
+    margin-top: 4%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -102,9 +102,30 @@
     padding: 12px 20px 12px 20px;
     cursor: pointer;
 }
-
+.designation {
+    display: flex;
+    justify-content: space-evenly;
+}
+.designation .desig {
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5em 0.5em;
+    margin: 1em 0.5em;
+    border: none;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+}
+.school-form .fields label {
+    font-size: 1.4rem;
+}
+.college-form .fields label {
+    font-size: 1.4rem;
+}
+.school-form, .college-form{
+    margin-bottom: 0.5em;
+}
 .lower-text {
-    /* background-color: pink; */
     text-align: center;
     margin-top: 1rem;
     padding: 0.5rem 2rem;
