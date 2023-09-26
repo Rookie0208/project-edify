@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/project-edify.git/static/css/main.1e96cf67.css",
+    "main.js": "/project-edify.git/static/js/main.b48a0a15.js",
+    "static/media/boy1.jpg": "/project-edify.git/static/media/boy1.f190534082b394f6e3d2.jpg",
+    "static/media/mission.jpg": "/project-edify.git/static/media/mission.34128925f2d1f8b14f51.jpg",
+    "static/media/boy2.jpg": "/project-edify.git/static/media/boy2.19f32aa819a598efacd2.jpg",
+    "static/media/signup.jpg": "/project-edify.git/static/media/signup.4de5765b754d23b5fcdf.jpg",
+    "static/media/goals.jpg": "/project-edify.git/static/media/goals.a40b63be9ba00269075c.jpg",
+    "static/media/boy3.jpg": "/project-edify.git/static/media/boy3.fe586d8150c72a4d4735.jpg",
+    "static/media/profileImg.jpg": "/project-edify.git/static/media/profileImg.6e5ccc4f9072f0731328.jpg",
+    "static/media/18407468_5995355.svg": "/project-edify.git/static/media/18407468_5995355.0da3b38b8b4d89076028cb9a47409f5c.svg",
+    "static/media/contact2.svg": "/project-edify.git/static/media/contact2.778791bbf97a482ae1e6249b3e620424.svg",
+    "static/media/sheep2.jpg": "/project-edify.git/static/media/sheep2.7962c3fd6636994a0e5d.jpg",
+    "static/media/login.svg": "/project-edify.git/static/media/login.7984290ecc4065ca224a36977eb62c26.svg",
+    "index.html": "/project-edify.git/index.html",
+    "main.1e96cf67.css.map": "/project-edify.git/static/css/main.1e96cf67.css.map",
+    "main.b48a0a15.js.map": "/project-edify.git/static/js/main.b48a0a15.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e96cf67.css",
+    "static/js/main.b48a0a15.js"
+  ]
+}
