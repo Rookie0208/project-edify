@@ -1,7 +1,7 @@
 .news-letter {
     margin-top: 20px;
     background-color: rgb(249, 244, 244);
-    background-image: url(https://picsum.photos/200/300);
+    /* background-image: url(https://picsum.photos/200/300); */
     background-repeat: no-repeat;
 
     background-position: center;
@@ -16,7 +16,7 @@
 }
 
 .letter-container {
-    
+    z-index: 15;
     /* height: 40vh; */
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@
 }
 
 .letter-head {
+    z-index: 15;
     font-size: 3rem;
     font-weight: 400;
     padding-top: 2%;
@@ -69,9 +70,67 @@
     cursor: pointer;
     border: 1px solid black;
     transition: 0.5s all;
-    color: white;
+    color: black;
 }
 .sub-btn:hover {
     color: white;
     background-color: black;
+}
+
+#blob1 {
+    z-index: -3;
+    height: 200px;
+    /* width: 300px; */
+    aspect-ratio: 1;
+    overflow:hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        aquamarine,
+        mediumpurple
+    );
+    animation: moveAndRotate 20s linear infinite;
+    /* animation: rotate 10s ease-in infinite; */
+    /* animation: revolve 10s ease-in infinite; */
+    /* filter: blur(200px); */
+}
+@keyframes moveAndRotate {
+    0% {
+        left: 0;
+        top: 50%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    40% {
+        left: 10%;
+        top: 30%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    50% {
+        left: 25%;
+        top: 45%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    60% {
+        left: 40%;
+        top: 60%;
+        transform: translateX(0) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        left: 95%;
+        top: 50%;
+        transform: translateX(-100%) translateY(-50%) rotate(360deg);
+    }
+}
+#blur1 {
+    overflow: hidden;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    backdrop-filter: blur(60px);
 }

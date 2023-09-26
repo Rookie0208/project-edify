@@ -311,3 +311,10 @@
 .signup-form.active {
     display: none;
 }
+
+.fields select {
+    border: none;
+    padding: 0.5em 0.4em;
+    margin-top: 2px;
+    backface-visibility: visible;
+}

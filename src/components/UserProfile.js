@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import profileImg from './assets/profileImg.jpg';
 
 const UserProfile = ({ arr }) => {
     console.log("arr props : "+arr);
@@ -9,7 +10,7 @@ const UserProfile = ({ arr }) => {
     <div className="profile-main-section">
                         <div className="user-profile">
                             <div className="user-img">
-                                {/* <img src="" alt="" /> */}
+                                <img src={profileImg} alt="" />
                             </div>
                             <div className="user-info">
                                 <div className="user-name text-3xl mb-1">

@@ -84,7 +84,8 @@
     display: none;
 }
 .courses-subject .subjects {
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background-color: rgb(98, 163, 237);
     overflow-x: auto;
     border-radius: 12px;
     height: 100%;

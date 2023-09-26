@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom';
+import achievement1 from './assets/18407468_5995355.svg';
 import './profile.css';
 import Leaderboard from './Leaderboard';
 import Editprofile from './Editprofile';
@@ -52,10 +53,18 @@ const ProfilePage = () => {
                             <div className="achievement-left-section">
                                 <h2 className='user-achievement header text-3xl'>Achievements</h2>
                                 <div className="user-achievement flex">
-                                    <div className="batches"></div>
-                                    <div className="batches"></div>
-                                    <div className="batches"></div>
-                                    <div className="batches"></div>
+                                    <div className="batches">
+                                <img src={achievement1} alt="" />
+                                    </div>
+                                    <div className="batches">
+                                <img src={achievement1} alt="" />
+                                    </div>
+                                    <div className="batches">
+                                <img src={achievement1} alt="" />
+                                    </div>
+                                    <div className="batches">
+                                <img src={achievement1} alt="" />
+                                    </div>
 
                                 </div>
 
